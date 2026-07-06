@@ -1,0 +1,4 @@
+# ninja log v7
+0	10	1783350782716898603	CMakeFiles/xpad-gip.dir/src/decoder.cpp.o	d28f4727dd07a28
+0	15	1783350782715341643	CMakeFiles/xpad-gip.dir/src/main.cpp.o	2c0a4a1ca87fe497
+15	52	1783350782730341612	xpad-gip	e638b5d60457024b

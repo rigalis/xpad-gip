@@ -1,0 +1,3 @@
+/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/xpad-gip.dir
+/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/edit_cache.dir
+/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/rebuild_cache.dir
