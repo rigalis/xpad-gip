@@ -40,3 +40,23 @@ constexpr uint16_t GIP_LB          = 1 << 13;
 constexpr uint16_t GIP_RB          = 1 << 14;
 constexpr uint16_t GIP_LS          = 1 << 15;
 constexpr uint16_t GIP_RS          = 1 << 3;
+
+struct GipButtonState {
+    bool sync, menu, view;
+    bool a, b, x, y;
+    bool dpad_up, dpad_down, dpad_left, dpad_right;
+    bool lb, rb, ls, rs;
+};
+struct GipAnalogState {
+    uint16_t lt;
+    uint16_t rt;
+    int16_t lx, ly;
+    int16_t rx, ry;
+};
+struct GipReport {
+    GipButtonState buttons;
+    GipAnalogState analogs;
+    uint8_t command;        //GIP command byte (0x20)
+    uint16_t sequence;      //packet sequence number
+    std::string to_json() const;
+};
