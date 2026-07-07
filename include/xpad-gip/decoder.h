@@ -60,3 +60,10 @@ struct GipReport {
     uint16_t sequence;      //packet sequence number
     std::string to_json() const;
 };
+
+class GipDecoder {
+public:
+    std::optional<GipReport> decode(const uint8_t* data, size_t len) const;
+    static float trigger_norm(uint16_t raw) { return raw / 1023.0f; }
+    static float stick_norm(int16_t raw) { return raw / 32767.0f; }
+};
