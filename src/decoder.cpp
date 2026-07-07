@@ -55,7 +55,7 @@ std::optional<GipReport> GipDecoder::decode(const uint8_t* data, size_t len) con
 
     int16_t rx = static_cast<int16_t>(payload[GIP_RX])
                | (static_cast<int16_t>(payload[GIP_RX + 1]) << 8);
-               
+
     int16_t ry = static_cast<int16_t>(payload[GIP_RY])
                | (static_cast<int16_t>(payload[GIP_RY + 1]) << 8);
 
@@ -65,4 +65,35 @@ std::optional<GipReport> GipDecoder::decode(const uint8_t* data, size_t len) con
         .command = command,
         .sequence = sequence,
     };
+}
+
+std::string GipReport::to_json() const {
+    return nlohmann::json{
+        {"seq", sequence},
+        {"buttons", {
+            {"sync", buttons.sync},
+            {"menu", buttons.menu},
+            {"view", buttons.view},
+            {"a", buttons.a},
+            {"b", buttons.b},
+            {"x", buttons.x},
+            {"y", buttons.y},
+            {"dpad_up", buttons.dpad_up},
+            {"dpad_down", buttons.dpad_down},
+            {"dpad_left", buttons.dpad_left},
+            {"dpad_right", buttons.dpad_right},
+            {"lb", buttons.lb},
+            {"rb", buttons.rb},
+            {"ls", buttons.ls},
+            {"rs", buttons.rs},
+        }},
+        {"analogs", {
+            {"lt", analogs.lt},
+            {"rt", analogs.rt},
+            {"lx", analogs.lx},
+            {"ly", analogs.ly},
+            {"rx", analogs.rx},
+            {"ry", analogs.ry},
+        }},
+    }.dump();
 }
