@@ -88,6 +88,93 @@ build xpad-gip: CXX_EXECUTABLE_LINKER__xpad-gip_Debug CMakeFiles/xpad-gip.dir/sr
   TARGET_PDB = xpad-gip.dbg
   TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target xpad-gip-probe
+
+
+#############################################
+# Order-only phony target for xpad-gip-probe
+
+build cmake_object_order_depends_target_xpad-gip-probe: phony || .
+
+build CMakeFiles/xpad-gip-probe.dir/src/probe_continuous.cpp.o: CXX_COMPILER__xpad-gip-probe_unscanned_Debug /home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_continuous.cpp || cmake_object_order_depends_target_xpad-gip-probe
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/xpad-gip-probe.dir/src/probe_continuous.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/rigalis/Documents/dev-workspace/xpad-gip/include -I/usr/include/libusb-1.0
+  OBJECT_DIR = CMakeFiles/xpad-gip-probe.dir
+  OBJECT_FILE_DIR = CMakeFiles/xpad-gip-probe.dir/src
+  TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip-probe.dir
+
+build CMakeFiles/xpad-gip-probe.dir/src/decoder.cpp.o: CXX_COMPILER__xpad-gip-probe_unscanned_Debug /home/rigalis/Documents/dev-workspace/xpad-gip/src/decoder.cpp || cmake_object_order_depends_target_xpad-gip-probe
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/xpad-gip-probe.dir/src/decoder.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/home/rigalis/Documents/dev-workspace/xpad-gip/include -I/usr/include/libusb-1.0
+  OBJECT_DIR = CMakeFiles/xpad-gip-probe.dir
+  OBJECT_FILE_DIR = CMakeFiles/xpad-gip-probe.dir/src
+  TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip-probe.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target xpad-gip-probe
+
+
+#############################################
+# Link the executable xpad-gip-probe
+
+build xpad-gip-probe: CXX_EXECUTABLE_LINKER__xpad-gip-probe_Debug CMakeFiles/xpad-gip-probe.dir/src/probe_continuous.cpp.o CMakeFiles/xpad-gip-probe.dir/src/decoder.cpp.o
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/xpad-gip-probe.dir/link.d
+  FLAGS = -g
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/xpad-gip-probe.dir/link.d
+  LINK_LIBRARIES = -lusb-1.0  -lfmt
+  OBJECT_DIR = CMakeFiles/xpad-gip-probe.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = xpad-gip-probe
+  TARGET_PDB = xpad-gip-probe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip-probe.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target xpad-gip-kernel-init
+
+
+#############################################
+# Order-only phony target for xpad-gip-kernel-init
+
+build cmake_object_order_depends_target_xpad-gip-kernel-init: phony || .
+
+build CMakeFiles/xpad-gip-kernel-init.dir/src/probe_kernel_init.cpp.o: CXX_COMPILER__xpad-gip-kernel-init_unscanned_Debug /home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_kernel_init.cpp || cmake_object_order_depends_target_xpad-gip-kernel-init
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/xpad-gip-kernel-init.dir/src/probe_kernel_init.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I/usr/include/libusb-1.0
+  OBJECT_DIR = CMakeFiles/xpad-gip-kernel-init.dir
+  OBJECT_FILE_DIR = CMakeFiles/xpad-gip-kernel-init.dir/src
+  TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip-kernel-init.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target xpad-gip-kernel-init
+
+
+#############################################
+# Link the executable xpad-gip-kernel-init
+
+build xpad-gip-kernel-init: CXX_EXECUTABLE_LINKER__xpad-gip-kernel-init_Debug CMakeFiles/xpad-gip-kernel-init.dir/src/probe_kernel_init.cpp.o
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/xpad-gip-kernel-init.dir/link.d
+  FLAGS = -g
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/xpad-gip-kernel-init.dir/link.d
+  LINK_LIBRARIES = -lusb-1.0  -lfmt
+  OBJECT_DIR = CMakeFiles/xpad-gip-kernel-init.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = xpad-gip-kernel-init
+  TARGET_PDB = xpad-gip-kernel-init.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles/xpad-gip-kernel-init.dir
+
 
 #############################################
 # Utility command for edit_cache
@@ -123,7 +210,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/rigalis/Documents/dev-workspace/xpad-gip/build
 
-build all: phony xpad-gip
+build all: phony xpad-gip xpad-gip-probe xpad-gip-kernel-init
 
 # =============================================================================
 # Built-in targets
@@ -132,14 +219,14 @@ build all: phony xpad-gip
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/rigalis/Documents/dev-workspace/xpad-gip/build/cmake_install.cmake: RERUN_CMAKE | /home/rigalis/Documents/dev-workspace/xpad-gip/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.3/CMakeCXXCompiler.cmake CMakeFiles/4.3.3/CMakeSystem.cmake
+build build.ninja /home/rigalis/Documents/dev-workspace/xpad-gip/build/cmake_install.cmake: RERUN_CMAKE | /home/rigalis/Documents/dev-workspace/xpad-gip/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/rigalis/Documents/dev-workspace/xpad-gip/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.3/CMakeCXXCompiler.cmake CMakeFiles/4.3.3/CMakeSystem.cmake: phony
+build /home/rigalis/Documents/dev-workspace/xpad-gip/CMakeLists.txt /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake: phony
 
 
 #############################################

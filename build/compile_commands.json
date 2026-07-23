@@ -10,5 +10,23 @@
   "command": "/usr/bin/g++ -I/home/rigalis/Documents/dev-workspace/xpad-gip/include -I/usr/include/libusb-1.0 -g -std=gnu++20 -o CMakeFiles/xpad-gip.dir/src/decoder.cpp.o -c /home/rigalis/Documents/dev-workspace/xpad-gip/src/decoder.cpp",
   "file": "/home/rigalis/Documents/dev-workspace/xpad-gip/src/decoder.cpp",
   "output": "/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/xpad-gip.dir/src/decoder.cpp.o"
+},
+{
+  "directory": "/home/rigalis/Documents/dev-workspace/xpad-gip/build",
+  "command": "/usr/bin/g++ -I/home/rigalis/Documents/dev-workspace/xpad-gip/include -I/usr/include/libusb-1.0 -g -std=gnu++20 -o CMakeFiles/xpad-gip-probe.dir/src/probe_continuous.cpp.o -c /home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_continuous.cpp",
+  "file": "/home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_continuous.cpp",
+  "output": "/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/xpad-gip-probe.dir/src/probe_continuous.cpp.o"
+},
+{
+  "directory": "/home/rigalis/Documents/dev-workspace/xpad-gip/build",
+  "command": "/usr/bin/g++ -I/home/rigalis/Documents/dev-workspace/xpad-gip/include -I/usr/include/libusb-1.0 -g -std=gnu++20 -o CMakeFiles/xpad-gip-probe.dir/src/decoder.cpp.o -c /home/rigalis/Documents/dev-workspace/xpad-gip/src/decoder.cpp",
+  "file": "/home/rigalis/Documents/dev-workspace/xpad-gip/src/decoder.cpp",
+  "output": "/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/xpad-gip-probe.dir/src/decoder.cpp.o"
+},
+{
+  "directory": "/home/rigalis/Documents/dev-workspace/xpad-gip/build",
+  "command": "/usr/bin/g++ -I/usr/include/libusb-1.0 -g -std=gnu++20 -o CMakeFiles/xpad-gip-kernel-init.dir/src/probe_kernel_init.cpp.o -c /home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_kernel_init.cpp",
+  "file": "/home/rigalis/Documents/dev-workspace/xpad-gip/src/probe_kernel_init.cpp",
+  "output": "/home/rigalis/Documents/dev-workspace/xpad-gip/build/CMakeFiles/xpad-gip-kernel-init.dir/src/probe_kernel_init.cpp.o"
 }
 ]

@@ -37,7 +37,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -57,7 +59,9 @@
 					"name" : "xpad-gip",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -68,6 +72,20 @@
 					"id" : "xpad-gip::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-xpad-gip-Debug-b4f2345ed56f963818c7.json",
 					"name" : "xpad-gip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xpad-gip-kernel-init::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xpad-gip-kernel-init-Debug-b7e5b7479efc934eb137.json",
+					"name" : "xpad-gip-kernel-init",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xpad-gip-probe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xpad-gip-probe-Debug-584e1d7efc1419a04bed.json",
+					"name" : "xpad-gip-probe",
 					"projectIndex" : 0
 				}
 			]

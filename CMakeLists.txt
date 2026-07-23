@@ -16,8 +16,30 @@ target_include_directories(xpad-gip PRIVATE
     ${CMAKE_SOURCE_DIR}/include
     ${LIBUSB_INCLUDE_DIRS}
     ${FMT_INCLUDE_DIRS})
-
+    
 target_link_libraries(xpad-gip PRIVATE
     ${LIBUSB_LIBRARIES}
     ${FMT_LIBRARIES}
     nlohmann_json::nlohmann_json)
+
+add_executable(xpad-gip-probe src/probe_continuous.cpp src/decoder.cpp)
+
+target_include_directories(xpad-gip-probe PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+    ${LIBUSB_INCLUDE_DIRS}
+    ${FMT_INCLUDE_DIRS})
+
+target_link_libraries(xpad-gip-probe PRIVATE
+    ${LIBUSB_LIBRARIES}
+    ${FMT_LIBRARIES}
+    nlohmann_json::nlohmann_json)
+    
+add_executable(xpad-gip-kernel-init src/probe_kernel_init.cpp)
+
+target_include_directories(xpad-gip-kernel-init PRIVATE
+    ${LIBUSB_INCLUDE_DIRS}
+    ${FMT_INCLUDE_DIRS})
+
+target_link_libraries(xpad-gip-kernel-init PRIVATE
+    ${LIBUSB_LIBRARIES}
+    ${FMT_LIBRARIES})
